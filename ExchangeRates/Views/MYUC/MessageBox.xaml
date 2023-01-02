@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="ExchangeRates.Views.MYUC.MessageBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ExchangeRates.Views.MYUC"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" d:DesignWidth="800" Height="200">
+    <Grid>
+
+        <materialDesign:Snackbar
+  x:Name="SnackbarTwo"
+  IsActive="{Binding check, UpdateSourceTrigger=PropertyChanged}"  HorizontalContentAlignment="Center" FontSize="22" Background="#FF81C784" Foreground="White" MessageQueue="{materialDesign:MessageQueue}">
+            <materialDesign:SnackbarMessage
+    Content="{Binding message}"
+    FontSize="48"            
+    FontFamily="Yu Gothic UI Semibold" Width="376" Height="65" />
+
+        </materialDesign:Snackbar>
+    </Grid>
+</UserControl>
