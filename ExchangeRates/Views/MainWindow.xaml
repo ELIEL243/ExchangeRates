@@ -27,27 +27,23 @@
 
         <!-- Header     -->
 
-        <materialDesign:ColorZone Grid.Column="1" Mode="PrimaryLight" Padding="16" Background="White" Foreground="#FF26375C" Margin="71,9,52,0" Height="69">
-            <TextBlock HorizontalAlignment="Center" FontSize="38" Foreground="#FF3B4F81" FontWeight="Normal" FontFamily="Bahnschrift Condensed" Width="387" Margin="0,0,0,-13"><Run Text="Gestion des taux de"/><Run Language="en-za" Text="s"/><Run Text=" chan"/><Run Text="ges"/></TextBlock>
+        <materialDesign:ColorZone materialDesign:ShadowAssist.ShadowDepth="Depth5" Grid.Column="1" Mode="PrimaryLight" Padding="16" Background="White" Foreground="#FF26375C" Margin="71,9,52,0" Height="69">
+            <TextBlock HorizontalAlignment="Center" FontSize="38" Foreground="#FF3B4F81" FontWeight="Normal" FontFamily="Bahnschrift Condensed" Width="387" Margin="0,0,0,-13"><Run Text="Gestion des taux de"/><Run Language="en-za" Text=""/><Run Text=" chan"/><Run Text="ge"/></TextBlock>
         </materialDesign:ColorZone>
 
         <!--Menu  -->
 
-        <materialDesign:ColorZone Grid.Column="0" Mode="PrimaryLight" Padding="1" Height="850" Background="#FF3B4F81" HorizontalAlignment="Left" Width="300">
-            <materialDesign:ColorZone.Effect>
-                <DropShadowEffect/>
-            </materialDesign:ColorZone.Effect>
-        </materialDesign:ColorZone>
-        <Button HorizontalContentAlignment="Left" Content="Marché Monétaire" FontSize="32" HorizontalAlignment="Left" Margin="8,103,0,0" VerticalAlignment="Top" Width="272" Height="100" Background="#FF3B4F81" BorderBrush="#FF11182A" FontFamily="Bahnschrift Condensed" Cursor="Hand" Foreground="White" OpacityMask="Black" Click="Button_Click"/>
-        <Button HorizontalContentAlignment="Left" Content="Convertisseur" FontSize="32" HorizontalAlignment="Left" Margin="13,352,0,0" VerticalAlignment="Top" Width="271" Height="101" Background="#FF3B4F81" BorderBrush="#FF11182A" FontFamily="Bahnschrift Condensed" Foreground="White" OpacityMask="Black" Click="Button_Click_1"/>
+        <materialDesign:ColorZone materialDesign:ShadowAssist.ShadowDepth="Depth5" Grid.Column="0" Mode="PrimaryLight" Padding="1" Height="850" Background="#FF3B4F81" HorizontalAlignment="Left" Width="300"/>
+        <Button HorizontalContentAlignment="Left" materialDesign:ShadowAssist.ShadowDepth="Depth5" Content="Marché Monétaire" FontSize="32" HorizontalAlignment="Left" Margin="8,103,0,0" VerticalAlignment="Top" Width="272" Height="100" Background="#FF3B4F81" BorderBrush="#FF11182A" FontFamily="Bahnschrift Condensed" Cursor="Hand" Foreground="White" OpacityMask="Black" Click="Button_Click"/>
+        <Button HorizontalContentAlignment="Left" materialDesign:ShadowAssist.ShadowDepth="Depth5" Content="Convertisseur" FontSize="32" HorizontalAlignment="Left" Margin="13,352,0,0" VerticalAlignment="Top" Width="271" Height="101" Background="#FF3B4F81" BorderBrush="#FF11182A" FontFamily="Bahnschrift Condensed" Foreground="White" OpacityMask="Black" Click="Button_Click_1"/>
 
-        <Button HorizontalContentAlignment="Left" Content="Taux des changes" FontSize="32" HorizontalAlignment="Left" Margin="11,225,0,0" VerticalAlignment="Top" Width="272" Height="99" Background="#FF3B4F81" BorderBrush="#FF11182A" FontFamily="Bahnschrift Condensed" Foreground="White" OpacityMask="Black" Click="Button_Click_4"/>
+        <Button HorizontalContentAlignment="Left" materialDesign:ShadowAssist.ShadowDepth="Depth5" Content="Taux de change" FontSize="32" HorizontalAlignment="Left" Margin="11,225,0,0" VerticalAlignment="Top" Width="272" Height="99" Background="#FF3B4F81" BorderBrush="#FF11182A" FontFamily="Bahnschrift Condensed" Foreground="White" OpacityMask="Black" Click="Button_Click_4"/>
         <Image HorizontalAlignment="Left" Height="84" Margin="157,221,0,0" VerticalAlignment="Top" Width="80"/>
         <Image HorizontalAlignment="Left" Height="84" Margin="144,673,0,0" VerticalAlignment="Top" Width="80"/>
         <Image HorizontalAlignment="Left" Height="84" Margin="150,558,0,0" VerticalAlignment="Top" Width="80"/>
         <Image HorizontalAlignment="Left" Height="84" Margin="157,107,0,0" VerticalAlignment="Top" Width="80"/>
 
-        <Button HorizontalContentAlignment="Left" Content="Devises" FontSize="32" HorizontalAlignment="Left" Margin="18,479,0,0" VerticalAlignment="Top" Width="272" Height="99" Background="#FF3B4F81" BorderBrush="#FF11182A" FontFamily="Bahnschrift Condensed" Foreground="White" OpacityMask="Black" Cursor="Hand" Click="Button_Click_2"/>
+        <Button HorizontalContentAlignment="Left" materialDesign:ShadowAssist.ShadowDepth="Depth5" Content="Devises" FontSize="32" HorizontalAlignment="Left" Margin="18,479,0,0" VerticalAlignment="Top" Width="272" Height="99" Background="#FF3B4F81" BorderBrush="#FF11182A" FontFamily="Bahnschrift Condensed" Foreground="White" OpacityMask="Black" Cursor="Hand" Click="Button_Click_2"/>
         <Image HorizontalAlignment="Left" Height="82" Margin="156,448,0,0" VerticalAlignment="Top" Width="80"/>
 
         <!-- Frame conteneur   -->
@@ -56,7 +52,7 @@
                 <Style/>
             </Frame.FocusVisualStyle>
         </Frame>
-        <Button FontSize="28" HorizontalAlignment="Left" Command="{Binding add_btn}" Margin="23,29,0,0" VerticalAlignment="Top" Width="225" Foreground="#FF334979" BorderBrush="#FF6B97FA" Height="62" Background="#FF3B4F81" Cursor="Hand" Click="Button_Click_3">
+        <Button FontSize="28" materialDesign:ShadowAssist.ShadowDepth="Depth5" HorizontalAlignment="Left" Command="{Binding add_btn}" Margin="23,29,0,0" VerticalAlignment="Top" Width="225" Foreground="#FF334979" BorderBrush="#FF6B97FA" Height="62" Background="#FF3B4F81" Cursor="Hand" Click="Button_Click_3">
 
             <Image Source="/Ressources/gear.png">
                 <Image.Effect>

@@ -9,9 +9,6 @@
              d:DesignHeight="728" d:DesignWidth="900">
     <Grid Background="#FFFFFDE7">
         <DataGrid x:Name="dt" AutoGenerateColumns="False" SelectedItem="" ItemsSource="{Binding forex_lst}" HorizontalContentAlignment="Left" Margin="10,143,10,10" IsReadOnly="True" ColumnWidth="*" AlternatingRowBackground="#FFCCD5F0" FontFamily="Bahnschrift Condensed" FontSize="22">
-            <DataGrid.Effect>
-                <DropShadowEffect/>
-            </DataGrid.Effect>
             <DataGrid.ColumnHeaderStyle>
                 <Style TargetType="{x:Type DataGridColumnHeader}">
                     <Setter Property="Background" Value="#FF3B4F81" />

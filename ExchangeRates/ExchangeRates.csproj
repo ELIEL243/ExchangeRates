@@ -216,6 +216,8 @@
     </None>
     <Resource Include="Ressources\cancel.png" />
     <Resource Include="Ressources\check.png" />
+    <Resource Include="Ressources\check-mark.png" />
+    <Resource Include="Ressources\warning.png" />
     <Content Include="TauxChange.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

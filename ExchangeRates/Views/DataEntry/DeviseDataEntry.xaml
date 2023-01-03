@@ -20,7 +20,7 @@
             <Button Content="valider" FontSize="22" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="328,286,0,0" Background="#FF5D6B99" Width="166" Height="47" Click="Button_Click" FontFamily="Bahnschrift Condensed"/>
             <TextBox Style="{StaticResource MaterialDesignOutlinedTextBox}" x:Name="NameTextBox" Text="{Binding devise.Name}" FontSize="30" materialDesign:HintAssist.Hint="Nom..."  Height="66" Margin="0,173,137,0" HorizontalAlignment="Right" Width="226" VerticalAlignment="Top" FontFamily="Bahnschrift Light Condensed" Cursor="Arrow"/>
             <materialDesign:ColorZone Mode="PrimaryLight" Padding="16" Background="#FF3B4F81" Foreground="#FF26375C" Height="70" Grid.ColumnSpan="2"/>
-            <Label HorizontalContentAlignment="Center" Content="Article" FontSize="32" VerticalContentAlignment="Center" Margin="273,3,106,0" FontFamily="Bahnschrift Condensed" FontWeight="Bold" Foreground="#FFFAFAFA" Height="44" VerticalAlignment="Top"/>
+            <Label HorizontalContentAlignment="Center" Content="Devise" FontSize="32" VerticalContentAlignment="Center" Margin="273,3,106,0" FontFamily="Bahnschrift Condensed" FontWeight="Bold" Foreground="#FFFAFAFA" Height="44" VerticalAlignment="Top"/>
             <Label HorizontalAlignment="Left" Margin="1,46,0,0" VerticalAlignment="Top" Width="798" Background="#FF5D6B99" Height="22" Grid.ColumnSpan="2"/>
         </Grid>
 

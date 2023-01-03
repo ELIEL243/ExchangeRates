@@ -12,9 +12,6 @@
         <Label HorizontalContentAlignment="Center" Content="Devises" FontSize="32" VerticalContentAlignment="Center" Margin="294,15,318,0" VerticalAlignment="Top" Height="52" FontFamily="Bahnschrift Condensed" FontWeight="Bold" Foreground="#FF3B4F81"/>
 
         <DataGrid x:Name="dt" AutoGenerateColumns="False" SelectedItem="{Binding devise}" ItemsSource="{Binding devises_lst}" HorizontalContentAlignment="Left" Margin="40,143,41,113" IsReadOnly="True" ColumnWidth="*" AlternatingRowBackground="#FFCCD5F0" FontFamily="Bahnschrift Condensed" FontSize="22">
-            <DataGrid.Effect>
-                <DropShadowEffect/>
-            </DataGrid.Effect>
             <DataGrid.ColumnHeaderStyle>
                 <Style TargetType="{x:Type DataGridColumnHeader}">
                     <Setter Property="Background" Value="#FF3B4F81" />

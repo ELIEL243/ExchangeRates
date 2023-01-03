@@ -10,11 +10,24 @@
 
         <materialDesign:Snackbar
   x:Name="SnackbarTwo"
-  IsActive="{Binding uncheck, UpdateSourceTrigger=PropertyChanged}"  HorizontalContentAlignment="Center" FontSize="22" Background="#FFFD6357" Foreground="White" MessageQueue="{materialDesign:MessageQueue}">
+            materialDesign:ShadowAssist.ShadowDepth="Depth5"
+  IsActive="{Binding uncheck, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,20"  HorizontalContentAlignment="Center" FontSize="22" Background="White" Foreground="#FF40508D" MessageQueue="{materialDesign:MessageQueue}">
+            <materialDesign:Snackbar.Effect>
+                <DropShadowEffect/>
+            </materialDesign:Snackbar.Effect>
             <materialDesign:SnackbarMessage
-    Content="{Binding message}"
     FontSize="48"            
-    FontFamily="Yu Gothic UI Semibold" Width="376" Height="65" />
+    FontFamily="Yu Gothic UI Semibold" Width="376" Height="65" Margin="0,0,0,10" >
+                <Grid>
+                    <TextBlock Width="270" HorizontalAlignment="Left" Margin="20,0,0,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" FontSize="15" Text="{Binding message}"></TextBlock>
+                    <Image Margin="270,-9,0,0" Width="100" VerticalAlignment="Center" Height="45" Source="/Ressources/warning.png">
+                        <Image.Effect>
+                            <DropShadowEffect/>
+                        </Image.Effect>
+                    </Image>
+                </Grid>
+                
+            </materialDesign:SnackbarMessage>
 
         </materialDesign:Snackbar>
     </Grid>

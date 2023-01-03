@@ -13,7 +13,7 @@
             Style="{StaticResource MaterialDesignOutlinedComboBox}"
             materialDesign:HintAssist.Hint="Devise" Text="{Binding current_devise.Name}" ItemsSource="{Binding devises_lst}" SelectedItem="{Binding devise}" DisplayMemberPath="Name" FontSize="48" Margin="348,250,309,0" VerticalAlignment="Top" Height="82" FontFamily="Bahnschrift Condensed" FontWeight="Normal" IsEditable="True" Background="White" IsReadOnly="True"/>
         <Label HorizontalContentAlignment="Center" Content="Reglage" FontSize="32" VerticalContentAlignment="Center" Margin="326,26,286,0" VerticalAlignment="Top" Height="52" FontFamily="Bahnschrift Condensed" FontWeight="Bold" Foreground="#FF3B4F81"/>
-        <Button Content="Valider" FontSize="36"  VerticalAlignment="Top" Margin="348,417,309,0" Background="#FF5D6B99" Height="79" Command="{Binding val_btn}" FontFamily="Bahnschrift Condensed" Cursor="Hand"/>
+        <Button Content="Valider" materialDesign:ShadowAssist.ShadowDepth="Depth5" FontSize="36"  VerticalAlignment="Top" Margin="348,417,309,0" Background="#FF5D6B99" Height="79" Command="{Binding val_btn}" FontFamily="Bahnschrift Condensed" Cursor="Hand"/>
         <Label HorizontalContentAlignment="Center" Content="Changer la devise de reférence" FontSize="32" VerticalContentAlignment="Center" Margin="294,165,248,0" VerticalAlignment="Top" Height="52" FontFamily="Bahnschrift Condensed" FontWeight="Bold" Foreground="#FF3B4F81"/>
         <!-- long hand form for setting the message -->
         <Grid>

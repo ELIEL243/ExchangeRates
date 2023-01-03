@@ -9,12 +9,9 @@
              d:DesignHeight="728" d:DesignWidth="900">
     <Grid Background="#FFFFFDE7">
 
-        <Label HorizontalContentAlignment="Center" Content="Taux des changes" FontSize="32" VerticalContentAlignment="Center" Margin="294,15,318,0" VerticalAlignment="Top" Height="52" FontFamily="Bahnschrift Condensed" FontWeight="Bold" Foreground="#FF3B4F81"/>
+        <Label HorizontalContentAlignment="Center" Content="Taux de change" FontSize="32" VerticalContentAlignment="Center" Margin="294,15,318,0" VerticalAlignment="Top" Height="52" FontFamily="Bahnschrift Condensed" FontWeight="Bold" Foreground="#FF3B4F81"/>
 
-        <DataGrid x:Name="dt" AutoGenerateColumns="False" SelectedItem="{Binding taux}" ItemsSource="{Binding tauxs}" HorizontalContentAlignment="Left" Margin="40,143,41,129" IsReadOnly="True" ColumnWidth="*" AlternatingRowBackground="#FFCCD5F0" FontFamily="Bahnschrift Condensed" FontSize="22">
-            <DataGrid.Effect>
-                <DropShadowEffect/>
-            </DataGrid.Effect>
+        <DataGrid x:Name="dt" materialDesign:ShadowAssist.ShadowDepth="Depth5" AutoGenerateColumns="False" SelectedItem="{Binding taux}" ItemsSource="{Binding tauxs}" HorizontalContentAlignment="Left" Margin="40,143,41,129" IsReadOnly="True" ColumnWidth="*" AlternatingRowBackground="#FFCCD5F0" FontFamily="Bahnschrift Condensed" FontSize="22">
             <DataGrid.ColumnHeaderStyle>
                 <Style TargetType="{x:Type DataGridColumnHeader}">
                     <Setter Property="Background" Value="#FF3B4F81" />
@@ -47,7 +44,7 @@
             </DataGrid.Columns>
 
         </DataGrid>
-        <Button FontSize="28" HorizontalAlignment="Right" Command="{Binding add_btn}" Margin="0,76,193,0" VerticalAlignment="Top" Width="63" Foreground="#FF334979" BorderBrush="#FF6B97FA" Height="62" Background="White" Cursor="Hand">
+        <Button FontSize="28" HorizontalAlignment="Right" Command="{Binding add_btn}" Margin="0,76,108,0" VerticalAlignment="Top" Width="63" Foreground="#FF334979" BorderBrush="#FF6B97FA" Height="62" Background="White" Cursor="Hand">
 
             <Image Source="/Ressources/add.png">
                 <Image.Effect>
@@ -59,15 +56,6 @@
         <Button FontSize="28" HorizontalAlignment="Right" Margin="0,76,41,0" VerticalAlignment="Top" Width="62" Foreground="#FF334979" BorderBrush="#FF6B97FA" Height="62" Background="White" Command="{Binding del_btn}" Cursor="Hand">
 
             <Image Source="/Ressources/delete.png" OpacityMask="#FFD07D7D">
-                <Image.Effect>
-                    <DropShadowEffect/>
-                </Image.Effect>
-            </Image>
-
-        </Button>
-        <Button FontSize="28" Command="{Binding edit_btn}" HorizontalAlignment="Right" Margin="0,76,117,0" VerticalAlignment="Top" Width="64" Foreground="#FF334979" BorderBrush="#FF6B97FA" Height="62" Background="White" Cursor="Hand">
-
-            <Image  Source="/Ressources/edit-button.png" OpacityMask="Black">
                 <Image.Effect>
                     <DropShadowEffect/>
                 </Image.Effect>
